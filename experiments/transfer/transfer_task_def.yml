@@ -1,0 +1,149 @@
+winogrande:
+  data_format: PremiseAndOneHypothesis
+  encoder_type: BERT
+  enable_san: true
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  n_class: 2
+  task_type: Classification
+  split_names:
+  - xs_train
+  - s_train
+  - m_train
+  - l_train
+  - xl_train
+  - dev
+  - test
+sicke:
+  data_format: PremiseAndOneHypothesis
+  encoder_type: BERT
+  enable_san: true
+  labels:
+  - contradiction
+  - neutral
+  - entailment
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  n_class: 3
+  task_type: Classification
+  split_names:
+  - train
+  - dev
+sickr:
+  data_format: PremiseAndOneHypothesis
+  encoder_type: BERT
+  enable_san: false
+  metric_meta:
+  - Pearson
+  - Spearman
+  n_class: 1
+  loss: MseCriterion
+  kd_loss: MseCriterion
+  task_type: Regression
+  split_names:
+  - train
+  - dev
+scitail:
+  encoder_type: BERT
+  data_format: PremiseAndOneHypothesis
+  enable_san: true
+  labels:
+  - neutral
+  - entails
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  n_class: 2
+  task_type: Classification
+wikiqa:
+  encoder_type: BERT
+  data_format: PremiseAndOneHypothesis
+  enable_san: true
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  n_class: 2
+  task_type: Classification
+snli:
+  data_format: PremiseAndOneHypothesis
+  encoder_type: BERT
+  enable_san: true
+  labels:
+  - contradiction
+  - neutral
+  - entailment
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  n_class: 3
+  task_type: Classification
+yelp:
+  data_format: PremiseOnly
+  encoder_type: BERT
+  enable_san: false
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  n_class: 2
+  task_type: Classification
+  split_names:
+  - train
+  - dev
+imdb:
+  data_format: PremiseOnly
+  encoder_type: BERT
+  enable_san: false
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  n_class: 2
+  task_type: Classification
+  split_names:
+  - train
+  - dev
+amazon:
+  data_format: PremiseOnly
+  encoder_type: BERT
+  enable_san: false
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  n_class: 2
+  task_type: Classification
+  split_names:
+  - train
+  - dev
+cr:
+  data_format: PremiseOnly
+  encoder_type: BERT
+  enable_san: false
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  n_class: 2
+  task_type: Classification
+  split_names:
+  - dev
+mr:
+  data_format: PremiseOnly
+  encoder_type: BERT
+  enable_san: false
+  metric_meta:
+  - ACC
+  loss: CeCriterion
+  kd_loss: MseCriterion
+  n_class: 2
+  task_type: Classification
+  split_names:
+  - dev

@@ -1,0 +1,14 @@
+shuf -n 50 sicke_train.json > sicke_0.01_train.json
+shuf -n 493 sicke_train.json > sicke_0.1_train.json
+shuf -n 204 wikiqa_train.json > wikiqa_0.01_train.json
+shuf -n 2036 wikiqa_train.json > wikiqa_0.1_train.json
+shuf -n 250 imdb_train.json > imdb_0.01_train.json
+shuf -n 2500 imdb_train.json > imdb_0.1_train.json
+shuf -n 5600 yelp_train.json > yelp_0.01_train.json
+shuf -n 56000 yelp_train.json > yelp_0.1_train.json
+shuf -n 5494 snli_train.json > snli_0.01_train.json
+shuf -n 54937 snli_train.json > snli_0.1_train.json
+shuf -n 50 sickr_train.json > sickr_0.01_train.json
+shuf -n 493 sickr_train.json > sickr_0.1_train.json
+shuf -n 236 scitail_train.json > scitail_0.01_train.json
+shuf -n 2360 scitail_train.json > scitail_0.1_train.json
